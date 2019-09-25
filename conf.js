@@ -29,7 +29,8 @@ jsproxy_config({
     'mysite': {
       label: 'Current Website',
       lines: {
-        [location.host]: 1,
+        //[location.host]: 1,
+        'app.betterman.workers.dev': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
