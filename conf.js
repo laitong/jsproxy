@@ -46,7 +46,7 @@ jsproxy_config({
         //'b.hehe.workers.dev': 1,
         //'b.lulu.workers.dev': 1,
         //'b.jsproxy.workers.dev': 1,
-          'crimson-feather-f4dc.betterman.workers.dev':1 
+        'docker.betterman.workers.dev':1 
       }
     }
   },
