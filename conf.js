@@ -13,7 +13,7 @@ jsproxy_config({
   // 节点配置
   node_map: {
     'demo-hk': {
-      label: '演示服务-香港节点',
+      label: 'Demo-HongKong',
       lines: {
         // 主机:权重
         'node-aliyun-hk-1.etherdream.com:8443': 1,
@@ -21,13 +21,13 @@ jsproxy_config({
       }
     },
     'demo-sg': {
-      label: '演示服务-新加坡节点',
+      label: 'Demo-Singapore',
       lines: {
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },
     'mysite': {
-      label: '当前站点',
+      label: 'Current Website',
       lines: {
         [location.host]: 1,
       }
@@ -35,17 +35,18 @@ jsproxy_config({
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '',
-      hidden: true,
+      //hidden: true,
       lines: {
         // 收费版（高权重）
-        'node-cfworker-2.etherdream.com': 4,
+        //'node-cfworker-2.etherdream.com': 4,
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        'b.007.workers.dev': 1,
-        'b.hehe.workers.dev': 1,
-        'b.lulu.workers.dev': 1,
-        'b.jsproxy.workers.dev': 1,
+        //'b.007.workers.dev': 1,
+        //'b.hehe.workers.dev': 1,
+        //'b.lulu.workers.dev': 1,
+        //'b.jsproxy.workers.dev': 1,
+          'https://crimson-feather-f4dc.betterman.workers.dev':1 
       }
     }
   },
